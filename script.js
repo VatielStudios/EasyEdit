@@ -15,6 +15,18 @@ document.getElementById('applyFontBtn').addEventListener('click', () => {
     styleSelection('fontFamily', document.getElementById('fontSelector').value);
 });
 
+document.getElementById('leftBtn').addEventListener('click', () => {
+    textEditor.style.textAlign = 'left';
+});
+
+document.getElementById('centerBtn').addEventListener('click', () => {
+    textEditor.style.textAlign = 'center';
+});
+
+document.getElementById('rightBtn').addEventListener('click', () => {
+    textEditor.style.textAlign = 'right';
+});
+
 document.getElementById('applyColorBtn').addEventListener('click', () => {
     styleSelection('color', document.getElementById('colorPicker').value);
 });
