@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'LynoJean';
+    src: url('fonts/LynoJean.otf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LynoWalt'; 
+    src: url('fonts/Lyno-Walt 2.otf') format('opentype');
+}
+
 body {
     background-color: #222;
     font-family: sans-serif;
