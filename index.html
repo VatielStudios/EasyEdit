@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <div class="toolbar">
+            
+            <div class="tool-group">
+                <label>Font</label>
+                <select id="fontSelector">
+                    <option value="Arial">Arial</option>
+                    <option value="MyCustomFont1">Custom Font 1</option>
+                    <option value="MyCustomFont2">Custom Font 2</option>
+                </select>
+                <button id="applyFontBtn">Set</button>
+            </div>
+
+            <div class="tool-group">
+                <label>Color</label>
+                <input type="color" id="colorPicker" value="#000000">
+                <button id="applyColorBtn">Set</button>
+            </div>
+
+            <div class="tool-group">
+                <label>Size</label>
+                <input type="number" id="sizePicker" value="40" style="width: 50px;">
+                <button id="applySizeBtn">Set</button>
+            </div>
+
+            <div class="tool-group">
+                <button id="boldBtn"><b>B</b></button>
+                <button id="italicBtn"><i>I</i></button>
+            </div>
+
+            <button id="convertBtn" class="action-btn">Export PNG</button>
+        </div>
+
+        <div class="canvas-wrapper">
+            <div id="textEditor" contenteditable="true" spellcheck="false">
+                Highlight text and change the style...
+            </div>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
